@@ -1,0 +1,247 @@
+.row {
+  margin-bottom: 50px;
+  padding-left: 130px;
+}
+
+.header {
+  display: flex; /* 横並びにする */
+  align-items: center; /* 縦方向の中央揃え */
+  padding: 10px; /* 余白を適用 */
+  background-color: #fff; /* 背景色を設定 */
+}
+
+.header > img {
+  margin-right: 20px; /* ロゴとテキストの間に余白 */
+}
+
+.header > h1 {
+  margin-left: 20%;
+  font-size: 60px; /* 見やすいサイズに設定 */
+}
+
+main {
+  height: 100%;
+}
+
+.heading {
+  display: grid; /* 子要素を横並びに */
+  align-items: flex-start; /* 上揃えにする */
+}
+
+.heading-26,
+.box-015 {
+  flex: 1; /* 子要素の幅を均等に */
+  margin: 0 10px; /* 両要素の間にスペースを追加 */
+}
+
+.heading-26 {
+  color: #333333;
+  margin: 5px;
+  text-align: center;
+}
+
+.heading-26:first-letter {
+  color: #ff0000;
+  font-size: 2em;
+}
+
+.box-015 {
+  position: relative;
+  max-width: 650px;
+  margin: 1em auto;
+  padding: 1em 2.5em 1em 1.5em;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 20%);
+  background-color: #e1ffe0;
+  color: #333333;
+}
+
+.box-015::before,
+.box-015::after {
+  position: absolute;
+  content: '';
+}
+
+.box-015::before {
+  top: -15px;
+  right: 10px;
+  height: 50px;
+  width: 15px;
+  border: 3px solid #999;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgb(0 0 0 / 30%);
+  transform: rotate(10deg);
+}
+
+.box-015::after {
+  top: 0;
+  width: 10px;
+  right: 20px;
+  border: solid 5px #e1ffe0;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.toc-002 {
+  margin: 0 auto;
+  width: 400px;
+  margin-bottom: 30px;
+  border: 2px solid #ff2e2e;
+  border-radius: 3px;
+}
+
+.toc-002 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ff2e2e;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.toc-002 ol {
+  list-style-type: decimal;
+  margin: 0;
+  overflow: hidden;
+}
+
+.toc-002 > ol {
+  padding: 1em 1em 1em 3em;
+}
+
+.toc-002 ol ol {
+  margin-top: 5px;
+  padding-left: 1.1em;
+}
+
+.toc-002 li {
+  padding: 5px 0;
+  font-weight: 600;
+}
+
+.toc-002 ol ol li {
+  font-weight: 500;
+  font-size: .9em;
+}
+
+.toc-002 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.heading-31 {
+  position: relative;
+  padding: .3em 0 .2em 1em;
+  border-bottom: 3px solid #13c962;
+  color: #333333;
+}
+
+.heading-31::before {
+  position: absolute;
+  top: 0;
+  left: .3em;
+  transform: rotate(55deg);
+  height: 11px;
+  width: 12px;
+  background: #13c962;
+  content: '';
+}
+
+.heading-31::after {
+  position: absolute;
+  transform: rotate(15deg);
+  top: .6em;
+  left: 0;
+  height: 8px;
+  width: 8px;
+  background: #13c962;
+  content: '';
+}
+
+.box-012 {
+  max-width: 500px;
+  padding: 0em;
+  border: 2px solid #13c962;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.box-012:nth-child(2n) {
+  margin-left: 15px;
+}
+
+.box-012:nth-child(1n) {
+  margin-right: 15px;
+}
+
+.box-012 span {
+  padding: .8em .8em .4em;
+  background-color: #13c962;
+  color: #fff;
+}
+
+.box-012 p {
+  margin: 0;
+  padding: 1em 1.5em;
+  color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+ }
+
+ .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid;
+  border-color: #ff2e2e;
+  width: 60vw;
+  height: 50vh;
+  margin: 100px auto;
+  padding: 50px;
+ }
+  
+ .card h2 {
+  font-size: 1.5em;
+ }
+  
+ .card .choice {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+ }
+  
+ .card .choice button {
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  width: 150px;
+ }
+
+ footer {
+  background-color: #ff2e2e;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+ }
+
+ .tooltip {
+  background-color: #13c962;
+ }
+
+ .row u {
+  text-decoration: underline;
+  text-decoration-color: #ff2e2e;
+ }
