@@ -248,7 +248,7 @@ h2 {
 
  .box-007 {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 1% auto;
   border: 2px solid #ffb36b;
   border-radius: 5px;
   color: #333333;
@@ -279,4 +279,8 @@ h2 {
 .box-007 p {
   margin: 0;
   padding: 0 1.5em 1em;
+}
+
+strong {
+  color: #ff0000;
 }
